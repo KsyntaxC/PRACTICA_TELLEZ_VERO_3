@@ -4,7 +4,8 @@ public class Ejercicio1 {
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         int n;
-        do{System.out.println("Tamaño del vector: ");n=sc.nextInt();}while(n<=0);
+        do{System.out.println("Tamaño del vector: ");n=sc.nextInt();
+        }while(n<=0);
         int x[]=new int[n];
         int y[]=new int[n];
         LeerVec(x,n);

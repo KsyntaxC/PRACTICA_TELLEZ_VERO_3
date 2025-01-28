@@ -41,13 +41,14 @@ public class Ejercicio9{
         return y;
     }
     private static int digCentral(int x) {
-        int cd=(int)Math.log10(x)+1;
+        int cd=(int)Math.log10(x)+1,dc;
         if (cd%2==0) {
             x=x/(int)Math.pow(10,(cd/2-1));
-            return x%100;
+            dc=x%100;
         } else {
             x=x/(int)Math.pow(10,(cd/2));
-            return x%10;
+            dc=x%10;
         }
+        return dc;
     }    
 }
